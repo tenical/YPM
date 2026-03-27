@@ -1,0 +1,19 @@
+name: me
+
+on:
+  push:
+
+jobs:
+  regulation:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        construction: ["resourceful", "mist", "nearly", "have", "envelope"]
+        length: ["mature", "cope", "lick", "rear"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java --enable-native-access=ALL-UNNAMED -jar zb.jar
